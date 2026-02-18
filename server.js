@@ -5,6 +5,7 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('./'));
 
 const OPENAI_API_KEY = "YOUR_API_KEY_HERE";
 
